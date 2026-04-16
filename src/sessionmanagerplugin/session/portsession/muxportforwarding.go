@@ -87,7 +87,6 @@ func (p *MuxPortForwarding) Stop() {
 		p.muxClient.close()
 	}
 	p.cleanUp()
-	os.Exit(0)
 }
 
 // InitializeStreams initializes i/o streams

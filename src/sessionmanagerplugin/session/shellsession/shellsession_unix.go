@@ -55,7 +55,6 @@ func setState(state *bytes.Buffer) error {
 func (s *ShellSession) Stop() {
 	setState(&s.originalSttyState)
 	setState(bytes.NewBufferString("echo")) // for linux and ubuntu
-	os.Exit(0)
 }
 
 // handleKeyboardInput handles input entered by customer on terminal
