@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/golang:1.25
+FROM public.ecr.aws/docker/library/golang:1.25.3
 
 RUN apt -y update && apt -y upgrade && apt -y install rpm tar gzip wget zip && apt clean all
 
